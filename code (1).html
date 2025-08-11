@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento do Estudante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilos do Header */
+        header {
+            background-color: #5abbff; /* Azul claro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #5abbff; /* Azul claro */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Estilos do Main */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #5abbff; /* Azul claro */
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .info-item label {
+            font-weight: bold;
+        }
+
+        /* Estilos do Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #5abbff; /* Azul claro */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Documento do Estudante</h1>
+        <button class="cta-button">Solicitar agora</button>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h2>Informações do Estudante</h2>
+        <div class="info-container">
+            <div class="info-item">
+                <label for="name">Nome:</label>
+                <span id="name">Karen Karoliny Pinheiro da Silveira</span>
+            </div>
+            <div class="info-item">
+                <label for="cpf">CPF:</label>
+                <span id="cpf">399.600.458-38</span>
+            </div>
+            <div class="info-item">
+                <label for="rg">RG:</label>
+                <span id="rg">37.285.622-6</span>
+            </div>
+            <div class="info-item">
+                <label for="birthdate">Data de Nascimento:</label>
+                <span id="birthdate">18/06/1997</span>
+            </div>
+            <div class="info-item">
+                <label for="institution">Instituição:</label>
+                <span id="institution">Instituto Ginead</span>
+            </div>
+            <div class="info-item">
+                <label for="course">Curso:</label>
+                <span id="course">Técnico em Marketing Digital</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Documento do Estudante. Todos os direitos reservados.</p>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos de uso</a>
+    </footer>
+
+</body>
+</html>
